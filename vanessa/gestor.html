@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador POP 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>CADASTRAR</legend>
+        <div class="container">
+            <form id="cadastro" action="">
+                <button type="button" class="cad" id="btn-int" onclick="abrirInteressado()">Interessado</button>
+                <button type="button" class="cad" id="btn-ord" onclick="abrirOrdem()">Ordem de Serviço</button>
+                <button type="button" class="cad" id="btn-fun" onclick="abrirFuncionario()">Funcionário</button>
+                <button type="button" class="cad" id="btn-voltar" onclick="voltarMenu()">Voltar</button>
+            </form>
+        </div>
+    </fieldset>
+    
+    <p></p>
+    
+    <fieldset>
+        <legend>Cadastrar Gestor</legend>
+        <div class="container">
+            <form id="form-gestor" action="">
+
+                <label for="input-gestor">Nome</label>
+                <input type="text" autofocus id="input-gestor" size="30">
+                <br>
+                <label for="input-cargoG">Cargo</label>
+                <input type="text" id="input-cargoG" size="30">
+                <br>
+                <label for="input-unidadeG">Unidade</label>
+                <input type="text" id="input-unidadeG" size="28">
+                <br>
+                <label for="input-registroG">Registro</label>
+                <input type="text" id="input-registroG" size="4">
+                <br>
+                <div>
+                <button id="cad-func" class="btn-func-gestor" onclick="entrar()">Cadastrar</button>
+                
+                <button id="cancelar" class="btn-func-gestor" onclick="cancelar()">Cancelar</button>
+                </div>
+                
+            </form>
+        </div>
+    </fieldset>
+    
+    <p></p>
+    
+    <div id="divFrame"></div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

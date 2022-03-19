@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador POP 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>CADASTRAR</legend>
+        <div class="container">
+            <form id="cadastro" action="">
+                <button type="button" class="cad" id="btn-int" onclick="abrirInteressado()">Interessado</button>
+                <button type="button" class="cad" id="btn-ord" onclick="abrirOrdem()">Ordem de Serviço</button>
+                <button type="button" class="cad" id="btn-fun" onclick="abrirFuncionario()">Funcionário</button>
+                <button type="button" class="cad" id="btn-ges" onclick="abrirGestor()">Gestor</button>
+            </form>
+        </div>
+    </fieldset>
+    
+    <p></p>
+    
+    <fieldset>
+        <legend>POP 31</legend>
+        <div class="container">
+            <form id="pop31" action="">
+                <button type="button" class="pop" onclick="preparaFrame()">A.1 - Pagou a multa e regularizou a situação</button>
+                <button type="button" class="pop">A.2 - Pagou a multa, mas não regularizou a situação</button>
+                <button type="button" class="pop">A.3 - Não pagou a multa, mas regularizou a situação</button>
+                <button type="button" class="pop">A.4 - Não pagou a multa e não regularizou a situação</button>
+                <p></p>
+                <button type="button" class="pop">B.1 - Pagou a multa e regulazirou a situação</button>
+                <button type="button" class="pop">B.2 - Pagou a multa, mas não regularizou a situação</button>
+                <button type="button" class="pop">B.3 - Não pagou a multa, mas regularizou a situação</button>
+                <button type="button" class="pop">B.4 - Não pagou a multa e não regularizou a situação</button>
+            </form>
+        </div>
+    </fieldset>
+    
+    <p></p>
+    
+    <div id="divFrame"></div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

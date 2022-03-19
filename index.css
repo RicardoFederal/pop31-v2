@@ -1,0 +1,68 @@
+:root{
+    --primary-color: rgb(93, 153, 243);
+    --primary-color-dark: rgb(22, 96, 206); 
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+form input {
+    font-size: 24px;
+    height: 40px;
+    padding: 0 20px;
+    width: 400px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 50%;
+    border-color: var(--primary-color);
+}
+
+form button:hover {
+    background: var(--primary-color-dark);
+}
+
+div {
+    display: flex;
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+}
+
+/*#input-usuario, #input-senha {
+    border-radius: 10px;
+    border-color: black;
+}*/

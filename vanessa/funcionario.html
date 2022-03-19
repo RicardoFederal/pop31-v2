@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador POP 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>CADASTRAR</legend>
+        <div class="container">
+            <form id="cadastro" action="">
+                <button type="button" class="cad" id="btn-int" onclick="abrirInteressado()">Interessado</button>
+                <button type="button" class="cad" id="btn-ord" onclick="abrirOrdem()">Ordem de Serviço</button>
+                <button type="button" class="cad" id="btn-voltar" onclick="voltarMenu()">Voltar</button>
+                <button type="button" class="cad" id="btn-ges" onclick="abrirGestor()">Gestor</button>
+            </form>
+        </div>
+    </fieldset>
+    
+    <p></p>
+    
+    <fieldset>
+        <legend>Cadastrar Funcionário</legend>
+        <div class="container">
+            <form id="form-func" action="">
+                
+            <label for="input-func">Nome</label>
+            <input type="text" autofocus id="input-func" size="30">
+            <br>
+            <label for="input-cargo">Cargo</label>
+            <input type="text" id="input-cargo" size="30">
+            <br>
+            <label for="input-unidade">Unidade</label>
+            <input type="text" id="input-unidade" size="28">
+            <br>
+            <label for="input-registro">Registro</label>
+            <input type="text" id="input-registro" size="4">
+            <br>
+            <div>
+            <button id="cad-func" class="btn-func-gestor" onclick="entrar()">Cadastrar</button>
+            
+            <button id="cancelar" class="btn-func-gestor" onclick="cancelar()">Cancelar</button>
+            </div>
+
+            </form>
+        </div>
+    </fieldset>
+    
+    <p></p>
+    
+    <div id="divFrame"></div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
